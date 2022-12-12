@@ -1,0 +1,75 @@
+html, body{
+    height: 100%;
+}
+
+.accent{
+    color: #3500D3;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+header {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 500;
+    padding-top: 2em;
+}
+
+#hello{
+    margin: auto;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.intro{
+    text-align: center;
+    position: relative;
+    left: 10%;
+    word-spacing: .4em;
+    letter-spacing: .05em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+    animation: 1.5s fadeIn 2.5s forwards;
+}
+
+.downBtn {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    width: 4em;
+    height: 4em;
+    border-radius: 2em;
+    background-color: #282828;
+    opacity: 0;
+
+    animation: 1s fadeIn 3.5s forwards;
+}
+
+
+
+.arrow{
+    border-bottom: solid white 0.5em;
+    border-right:solid white 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 0) rotate(45deg);
+}
+
+.arrow:hover{
+    top: 20%;
+}
