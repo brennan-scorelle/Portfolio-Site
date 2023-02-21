@@ -1,0 +1,86 @@
+body{
+    background-color:dimgray;
+    width: 100%;
+    height: 100%;
+}
+.orbit {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+}
+.center-img{
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 1.5rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+
+li {
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #240090;
+    color: white;
+    font-weight: 700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    width: 3.5rem;
+}
+
+li:nth-child(3) img {
+    width: 3rem;
+    border-radius: .5em;
+}
+li:nth-child(3) p {
+    font-size: 0.8rem;
+}
+
+li div {
+    opacity: 0;
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #240090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 500ms;
+}
+
+li > *{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li:first-child {
+    transform: translate(200%, -50%);
+}
+
+li:nth-child(2) {
+    transform: translate(-50%, 200%);
+}
+
+li:nth-child(3) {
+    transform: translate(-300%, -50%);
+}
+
+li:nth-child(4) {
+    transform: translate(-50%, -300%);
+}
+
+
+li:hover > div {
+    opacity: 0.8;
+}
