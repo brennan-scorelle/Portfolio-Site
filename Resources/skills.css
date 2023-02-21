@@ -11,7 +11,7 @@ nav.skills{
 .orbit {
     width: max-content;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: 2px solid white;
@@ -27,7 +27,7 @@ nav.skills{
 
 
 .orbit li {
-    width: 5rem;
+    width: 6rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     background-color: #240090;
