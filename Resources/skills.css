@@ -3,6 +3,11 @@ body{
     width: 100%;
     height: 100%;
 }
+
+nav.skills{
+    opacity: 1;
+    animation: none;
+}
 .orbit {
     width: max-content;
     position: absolute;
@@ -21,7 +26,7 @@ body{
 
 
 
-li {
+.orbit li {
     width: 5rem;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
@@ -37,15 +42,15 @@ img {
     width: 3.5rem;
 }
 
-li:nth-child(3) img {
+.orbit li:nth-child(3) img {
     width: 3rem;
     border-radius: .5em;
 }
-li:nth-child(3) p {
+.orbit li:nth-child(3) p {
     font-size: 0.8rem;
 }
 
-li div {
+.orbit li div {
     opacity: 0;
     width: 5rem;
     aspect-ratio: 1 / 1;
@@ -57,30 +62,30 @@ li div {
     transition: opacity 500ms;
 }
 
-li > *{
+.orbit li > *{
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-li:first-child {
+.orbit li:first-child {
     transform: translate(200%, -50%);
 }
 
-li:nth-child(2) {
+.orbit li:nth-child(2) {
     transform: translate(-50%, 200%);
 }
 
-li:nth-child(3) {
+.orbit li:nth-child(3) {
     transform: translate(-300%, -50%);
 }
 
-li:nth-child(4) {
+.orbit li:nth-child(4) {
     transform: translate(-50%, -300%);
 }
 
 
-li:hover > div {
+.orbit li:hover > div {
     opacity: 0.8;
 }

@@ -109,6 +109,9 @@ nav{
     top: 0;
     width: 100%;
     opacity: 0;
+}
+
+nav.main{
     animation:  1s fadeIn 4.5s forwards;
 }
 
