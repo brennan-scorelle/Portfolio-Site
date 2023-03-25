@@ -103,6 +103,16 @@ h2{
     margin-right: auto;
 }
 
+#logo a {
+    width: 13rem;
+    z-index: 2
+}
+
+#logo span {
+    margin-left: -6.5rem;
+    z-index: 1;
+}
+
 nav{
     background-color: #0C0032;
     position:fixed;

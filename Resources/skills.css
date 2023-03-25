@@ -4,27 +4,55 @@ body{
     height: 100%;
 }
 
-nav.skills{
+h2{
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+nav{
     opacity: 1;
-    animation: none;
+    z-index: 10;
 }
+
+
+
+/* skills section */
+
+
+.skills h2{
+    margin-bottom: 5rem;
+}
+
+@keyframes spin-right {
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spin-left {
+    100% {transform: rotate(-360deg);}
+}
+
 .orbit {
-    width: max-content;
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid white;
+    width: 8rem;
+    height: 8rem;
+    margin-top: -4rem;
+    margin-left: -4rem;
+    animation: spin-right 20s linear infinite;
 }
+
 .center-img{
     width: 8rem;
     aspect-ratio: 1 / 1;
     border-radius: 1.5rem;
     position: absolute;
-    transform: translate(-50%, -50%);
+    animation: spin-left 20s linear infinite;
 }
-
-
 
 .orbit li {
     width: 6rem;
@@ -35,10 +63,12 @@ nav.skills{
     font-weight: 700;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 1rem;
+    left: 1rem;
+    animation: spin-left 20s linear infinite;
 }
 
-img {
+.orbit li img {
     width: 3.5rem;
 }
 
@@ -70,22 +100,37 @@ img {
 }
 
 .orbit li:first-child {
-    transform: translate(200%, -50%);
+    margin-left: 150%;
 }
 
 .orbit li:nth-child(2) {
-    transform: translate(-50%, 200%);
+    margin-top: 150%;
 }
 
 .orbit li:nth-child(3) {
-    transform: translate(-300%, -50%);
+    margin-left: -150%;
 }
 
 .orbit li:nth-child(4) {
-    transform: translate(-50%, -300%);
+    margin-top: -150%;
 }
 
 
 .orbit li:hover > div {
     opacity: 0.8;
+}
+
+
+
+
+/* projects section */
+
+
+
+
+.projects{
+    height: 100%;
+    width: 100%;
+    background-color: #240090;
+    padding: 4rem;
 }
