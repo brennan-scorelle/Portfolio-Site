@@ -46,12 +46,39 @@ nav{
     animation: spin-right 20s linear infinite;
 }
 
+.comment{
+    animation: spin-left 20s linear infinite;
+    margin-top: 4rem;
+    opacity: 0;
+    height:0;
+}
+
+.bubble{
+    position: relative;
+    left: 7rem;
+    top:-5rem;
+    background-color: white;
+    width:6rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 2rem;
+    border-bottom-left-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .center-img{
     width: 8rem;
     aspect-ratio: 1 / 1;
     border-radius: 1.5rem;
     position: absolute;
     animation: spin-left 20s linear infinite;
+}
+
+.center-img:hover{
+    cursor: pointer;
 }
 
 .orbit li {
